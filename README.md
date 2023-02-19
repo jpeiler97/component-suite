@@ -1,8 +1,8 @@
-## React Component Suite
+# React Component Suite
 
 Creating a suite of reuseable components for advanced learning purposes.
 
-# Components
+## Components
 
 Form Components
 - Form
