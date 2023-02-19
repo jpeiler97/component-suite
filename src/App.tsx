@@ -6,7 +6,19 @@ function App() {
   return (
     <div className="App">
       <Form>
-        <Input />
+        <Input
+          id="username"
+          validate="isFoo"
+          displayName="jp"
+          customRules={{
+            isFoo: {
+              rule: () => /^\d+$/,
+              formatter(fieldName: string) {
+                return `Foo. Bar. I am ${fieldName}.`;
+              },
+            },
+          }}
+        />
       </Form>
     </div>
   );
